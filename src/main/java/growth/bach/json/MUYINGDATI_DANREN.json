@@ -1,0 +1,14 @@
+type: MUYINGDATI_DANREN
+muYingSpamSuccessLimit
+{"limit": "10", "checkSpam": "true", "checkPeriod": "DAILY", "expirePeriod": "DAILY", "taskMaxBenefitQuantity": "100"}
+
+default
+{}
+
+muyingSingleAnswer
+{"step": "10.0", "limitShowing": 100, "prizeQuantity": 10, "triggerCondition": {}, "triggerConditionId": "single_answer_trigger"}
+default
+{"prizeQuantity": 10}
+
+
+{"triggerCondition": {"pageIdSet": ["66a3907a4bd169000180fe3d"]}, "triggerConditionId": "note_browse_trigger"}

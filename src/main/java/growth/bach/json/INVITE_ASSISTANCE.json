@@ -1,0 +1,9 @@
+type: INVITE_ASSISTANCE
+muYingSpamSuccessLimit
+{"limit": "1", "checkSpam": "true", "checkPeriod": "ACTIVITY", "expirePeriod": "ACTIVITY", "taskMaxBenefitQuantity": "500"}
+default
+{}
+default
+{"triggerCondition": {}, "triggerConditionId": "invite_assist_trigger"}
+default
+{"prizeQuantity": 500}

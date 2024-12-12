@@ -1,0 +1,17 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  beaninfo:
+    ignore: false
+  config:
+    use-legacy-processing: false
+#  context:
+#    initializer:
+#      classes:
+#        - com.example.initializer.MyCustomInitializer
+
+
+
+#spring:
+#  profiles:
+#    active: dev

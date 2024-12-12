@@ -1,0 +1,10 @@
+type: TOPIC_NOTE_BROWSE
+muYingSpamSuccessLimit
+{"limit": "1", "checkSpam": "true", "checkPeriod": "DAILY", "expirePeriod": "DAILY", "taskMaxBenefitQuantity": "10"}
+
+default
+{}
+default
+{"triggerCondition": {"pageIdSet": ["66a3907a4bd169000180fe3d"]}, "triggerConditionId": "note_browse_trigger"}
+default
+{"prizeQuantity": 10}

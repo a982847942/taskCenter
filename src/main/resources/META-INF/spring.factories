@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.xiaohongshu.growth.tech.autoconfigure.GrowthConfigAutoConfiguration,\
+  com.xiaohongshu.growth.tech.autoconfigure.GrowthLogAutoConfiguration,\
+  com.xiaohongshu.growth.tech.autoconfigure.GrowthEasyTestAutoConfiguration

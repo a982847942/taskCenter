@@ -1,0 +1,170 @@
+{
+  "roleARoom": {
+    "type": "ROOM",
+    "roomConfig": {
+      "roomCapacity": 2,
+      "heartbeatMaxIntervalSecond": 60
+    },
+    "taskPoints": {
+      "onRoomMemberGetReady": {
+        "parameter": {
+          "taskType": "MUYINGDATI_ZUDUI",
+          "taskMetaId": 1801
+        },
+        "pointName": "TAKE_TASK"
+      },
+      "onRoomRoundEndEachMember": {
+        "parameter": {
+          "eventType": "MUYING_TEAM_ANSWER_CORRECT"
+        },
+        "pointName": "ROOM_ROUND_END_WITH_AVERAGE"
+      }
+    },
+    "questionDrawStrategy": {
+      "type": "limit_random",
+      "parameter": {
+        "limit": 10,
+        "questionRepo": "roleA"
+      }
+    }
+  },
+  "roleBRoom": {
+    "type": "ROOM",
+    "roomConfig": {
+      "roomCapacity": 2,
+      "heartbeatMaxIntervalSecond": 60
+    },
+    "taskPoints": {
+      "onRoomMemberGetReady": {
+        "parameter": {
+          "taskType": "MUYINGDATI_ZUDUI",
+          "taskMetaId": 1801
+        },
+        "pointName": "TAKE_TASK"
+      },
+      "onRoomRoundEndEachMember": {
+        "parameter": {
+          "eventType": "MUYING_TEAM_ANSWER_CORRECT"
+        },
+        "pointName": "ROOM_ROUND_END_WITH_AVERAGE"
+      }
+    },
+    "questionDrawStrategy": {
+      "type": "limit_random",
+      "parameter": {
+        "limit": 10,
+        "questionRepo": "roleB"
+      }
+    }
+  },
+  "roleCRoom": {
+    "type": "ROOM",
+    "roomConfig": {
+      "roomCapacity": 2,
+      "heartbeatMaxIntervalSecond": 60
+    },
+    "taskPoints": {
+      "onRoomMemberGetReady": {
+        "parameter": {
+          "taskType": "MUYINGDATI_ZUDUI",
+          "taskMetaId": 1801
+        },
+        "pointName": "TAKE_TASK"
+      },
+      "onRoomRoundEndEachMember": {
+        "parameter": {
+          "eventType": "MUYING_TEAM_ANSWER_CORRECT"
+        },
+        "pointName": "ROOM_ROUND_END_WITH_AVERAGE"
+      }
+    },
+    "questionDrawStrategy": {
+      "type": "limit_random",
+      "parameter": {
+        "limit": 10,
+        "questionRepo": "roleC"
+      }
+    }
+  },
+  "roleASingle": {
+    "type": "SINGLE",
+    "taskPoints": {
+      "onSingleRoundStart": {
+        "parameter": {
+          "taskType": "MUYINGDATI_DANREN",
+          "taskMetaId": 1800
+        },
+        "pointName": "TAKE_TASK"
+      },
+      "onQuestionAnswerCorrect": {
+        "parameter": {
+          "eventType": "MUYING_ANSWER_CORRECT"
+        },
+        "pointName": "QUESTION_ANSWER_CORRECT"
+      }
+    },
+    "questionDrawStrategy": {
+      "type": "infinite_random",
+      "parameter": {
+        "batchSize": 8,
+        "questionRepo": "roleA",
+        "preloadThreshold": 2,
+        "guardUniqueForFirst": 5
+      }
+    }
+  },
+  "roleBSingle": {
+    "type": "SINGLE",
+    "taskPoints": {
+      "onSingleRoundStart": {
+        "parameter": {
+          "taskType": "MUYINGDATI_DANREN",
+          "taskMetaId": 1800
+        },
+        "pointName": "TAKE_TASK"
+      },
+      "onQuestionAnswerCorrect": {
+        "parameter": {
+          "eventType": "MUYING_ANSWER_CORRECT"
+        },
+        "pointName": "QUESTION_ANSWER_CORRECT"
+      }
+    },
+    "questionDrawStrategy": {
+      "type": "infinite_random",
+      "parameter": {
+        "batchSize": 8,
+        "questionRepo": "roleB",
+        "preloadThreshold": 2,
+        "guardUniqueForFirst": 5
+      }
+    }
+  },
+  "roleCSingle": {
+    "type": "SINGLE",
+    "taskPoints": {
+      "onSingleRoundStart": {
+        "parameter": {
+          "taskType": "MUYINGDATI_DANREN",
+          "taskMetaId": 1800
+        },
+        "pointName": "TAKE_TASK"
+      },
+      "onQuestionAnswerCorrect": {
+        "parameter": {
+          "eventType": "MUYING_ANSWER_CORRECT"
+        },
+        "pointName": "QUESTION_ANSWER_CORRECT"
+      }
+    },
+    "questionDrawStrategy": {
+      "type": "infinite_random",
+      "parameter": {
+        "batchSize": 8,
+        "questionRepo": "roleC",
+        "preloadThreshold": 2,
+        "guardUniqueForFirst": 5
+      }
+    }
+  }
+}

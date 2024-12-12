@@ -1,0 +1,17 @@
+createConditionId: muYingSpamSuccessLimit
+{
+  "limit": "1000",
+  "checkSpam": "true",
+  "checkPeriod": "DAILY",
+  "expirePeriod": "DAILY",
+  "taskMaxBenefitQuantity": "200"
+}
+
+default
+{}
+
+default
+{"triggerCondition": {}, "triggerConditionId": "team_answer_trigger"}
+
+muyingTeamAnswer
+{"quantity": 100, "unitScore": 10, "minAverageScore": "70"}

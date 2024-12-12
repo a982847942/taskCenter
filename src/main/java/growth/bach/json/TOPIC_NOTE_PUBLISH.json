@@ -1,0 +1,9 @@
+type: TOPIC_NOTE_PUBLISH
+muYingSpamSuccessLimit
+{"limit": "1", "checkSpam": "true", "checkPeriod": "DAILY", "expirePeriod": "DAILY", "taskMaxBenefitQuantity": "20"}
+default
+{}
+default
+{"triggerCondition": {"topicIdSet": ["66a3907a0000000024029e99"]}, "triggerConditionId": "note_publish_trigger"}
+default
+{"prizeQuantity": 20}
